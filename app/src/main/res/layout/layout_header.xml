@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#311B92">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="Geo Playlist"
+            android:textSize="45dp"
+            android:background="#000000"
+            android:textColor="@color/colorGreen"
+            android:gravity="center|left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/headerTitleB"
+            android:textColor="#ffffff"
+            android:text="test"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

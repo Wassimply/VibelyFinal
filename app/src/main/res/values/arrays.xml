@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dialog_choices">
+        <item>I will rate!</item>
+        <item>I will never rate this!</item>
+    </string-array>
+
+    <string-array name="food">
+        <item>Pizza</item>
+        <item>Noodles</item>
+        <item>Pasta</item>
+        <item>Hamburger</item>
+    </string-array>
+
+    <string-array name="donations">
+        <item>Like track%1$</item>
+        <item>Add track to playlist%100$</item>
+        <item>Share%1$</item>
+        <item>Download track%1$</item>
+    </string-array>
+
+</resources>

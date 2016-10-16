@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.appteve.vibely.ProfileActivity"
+    tools:showIn="@layout/app_bar_profile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="#311B92">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/changeName"
+                android:src="@drawable/user_name"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="changeNameBtn" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageAvatar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/defim"
+                android:layout_marginTop="100dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/chngeImage"
+                android:src="@drawable/profile_art"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="changeImageBtn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Username"
+                android:id="@+id/textUsername"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:id="@+id/logoutButton"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorGreen"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="logoutBtn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

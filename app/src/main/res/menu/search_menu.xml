@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_artist"
+        android:orderInCategory="100"
+        android:title="Artist"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_album"
+        android:orderInCategory="100"
+        android:title="Album"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_style"
+        android:orderInCategory="100"
+        android:title="Style"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.appteve.vibely.LoginActivity"
+    android:background="#311B92">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/defim_clear"
+            android:layout_marginBottom="60dp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="E-mail"
+            android:textColorHint="@color/colorGreen"
+            android:id="@+id/emailText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:textColorHint="@color/colorGreen"
+            android:id="@+id/passwordText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/buttonLogin"
+            android:layout_gravity="center_horizontal"
+            android:onClick="login_click"
+            android:background="@color/colorGreen"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Register new account"
+            android:id="@+id/buttonRegister"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="@color/colorGreen"
+            android:layout_marginBottom="5dp"
+            android:onClick="registration_click" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="forgot password"
+            android:id="@+id/buttonForgot"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="@color/colorGreen"
+            android:onClick="forgotBtnClick" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
