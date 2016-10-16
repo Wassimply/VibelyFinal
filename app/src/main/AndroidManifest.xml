@@ -46,18 +46,21 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.appteve.ViberlyApp.PlayerActivity">
-              <intent-filter>
-                   <action android:name="com.appteve.spotimusic.PlayerService.ACTION_PLAY_COMPLETED"></action>
-              </intent-filter>
-              <intent-filter>
-                 <action android:name="com.appteve.spotimusic.PlayerService.ACTION_PLAY_CHANGE"></action>
-              </intent-filter>
-              <intent-filter>
-                <action android:name="com.appteve.spotimusic.PlayerService.ACTION_PLAY_START"></action>
-              </intent-filter>
-
         </activity>
+        <meta-data
+            android:name="com.google.android.awareness.API_KEY"
+            android:value="@string/api_key"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+        <meta-data
 
+            android:name="com.google.android.nearby.messages.API_KEY"
+            android:value="@string/api_key" />
+
+        <activity
+            android:name="com.spotify.sdk.android.authentication.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
             android:name="com.appteve.ViberlyApp.MyplaylistActivity"
@@ -89,9 +92,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <service android:name="com.appteve.ViberlyApp.PlayerService" />
-
-
-
 
         <activity
             android:name="com.appteve.ViberlyApp.ProfileActivity"
